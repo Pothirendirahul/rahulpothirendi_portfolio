@@ -115,7 +115,7 @@
                 <span>Rahul Pothirendi</span>
             </div>
             <div class="featured-name">
-                <p>I'm <span class="typedText"></span></p>
+                <p>I'm  <span class="typedText"></span></p>
             </div>
             <div class="featured-text-info">
                 <p>Hey there, I'm Rahul – an Software Developer with a passion for crafting seamless user experiences and pushing the boundaries of web development. 
@@ -123,9 +123,13 @@
             </div>
             <div class="featured-text-btn">
                 <a href="assets/images/SE2_RESUME.pdf" target="_blank"></a>
-                    <button class="btn"> <a href="assets/images/SE2_RESUME.pdf" target="_blank">Download Resume </a><i class="uil uil-file-alt"></i></button>
-                </a>
+                <button id="hovered">
+                    <a href="assets/images/SE2_RESUME.pdf" target="_blank">Download Resume</a>
+                    <i class="uil uil-file-alt"></i>
+                </button>
             </div>
+            
+
             <div class="social_icons">
                 <div class="icon"><a href="https://www.instagram.com/rahulpothirendi/" target="_blank"><i class="uil uil-instagram"></i></a></div>
                 <div class="icon"><a href="https://www.linkedin.com/in/rahulpothirendi/" target="_blank"><i class="uil uil-linkedin-alt"></i></a></div>
@@ -147,128 +151,166 @@
        </section>
        <!-- -------------- ABOUT BOX ---------------- -->
        <section class="section" id="about">
-          <div class="top-header">
-            <h1>About Me</h1>
-          </div>
-          <div class="row">
-            <div class="col">
-                <div class="about-info">
-                    
-                    <p>Currently pursuing a Master of Science in Software Engineering from Northeastern University, I am deeply engaged in honing my skills in HTML, CSS, and JavaScript, along with exploring various cutting-edge frameworks and libraries. 
-                    </p>
-                    <div class="about-btn">
-                        <button class="btn">Download CV <i class="uil uil-import"></i></button>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="col">
-                    <div class="skills-box">
-                        <div class="skills-header">
-                            <h3>Languages</h3>
-                        </div>
-                        <div class="skills-list">
-                            <span>C/C++</span>
-                            <span>Python</span>
-                            <span>JavaScript/TypeScript</span>
-                            <span>HTML5/CSS</span>
-                            <span>MongoDB</span>
-                            <span>Assembly Language</span>
-                            <span>SQL</span>
-                            <span>NodeJS</span>
-                            <span>Express JS</span>
-                            <span>Data Structures and Algorithms</span>
-                            <span>Verilog</span>
-                        </div>
-                    </div>
-                    <div class="skills-box">
-                        <div class="skills-header">
-                            <h3>Technologies</h3>
-                        </div>
-                        <div class="skills-list">
-                            <span>React.js</span>
-                            <span>Vue.js</span>
-                            <span>Spring Boot</span>
-                            <span>TensorFlow</span>
-                            <span>PyTorch</span>
-                            <span>jQuery</span>
-                            <span>Bootstrap</span>
-                            <span>Laravel</span>
-                            <span>Flask</span>
-                            <span>ASP.NET</span>
-                        </div>
-                    </div>
-                    <div class="skills-box">
-                        <div class="skills-header">
-                            <h3>Frameworks</h3>
-                        </div>
-                        <div class="skills-list">
-                            <span>React</span>
-                            <span>Flask</span>
-                            <span>JUnit</span>
-                            <span>Material-UI</span>
-                            <span>FastAPI</span>
-                        </div>
-                    </div>
-                    
-                    <div class="skills-box">
-                        <div class="skills-header">
-                            <h3>Tools</h3>
-                        </div>
-                        <div class="skills-list">
-                            <span>Git/GitHub</span>
-                            <span>Unix Shell</span>
-                            <span>Webpack</span>
-                            <span>Azure</span>
-                            <span>Atom</span>
-                            <span>Visual Studio</span>
-                        </div>
-                    </div>
-                    
-                </div>
-
+        <div class="top-header">
+          <h1>About Me</h1>
+        </div>
+        <div class="row">
+          <div class="col">
+            <div class="about-info">
+              <p>
+                I am currently pursuing a Master’s in Software Engineering at Northeastern University, focusing on full-stack development, data science, and modern web technologies. My passion for coding extends to exploring new frameworks, languages, and tools that drive innovation in the tech industry.
+              </p>
+              <div class="about-btn">
+                <a href="path/to/your-cv.pdf" class="btn" download="YourName_CV">Download CV <i class="uil uil-download-alt"></i></a>
+              </div>
             </div>
           </div>
-       </section>
-
+          <div class="col">
+            <div class="skills-container">
+              <div class="skills-box">
+                <h3>Core Competencies</h3>
+                <div class="skills-list">
+                  <span>Software Engineering</span>
+                  <span>Full-Stack Development</span>
+                  <span>Data Structures & Algorithms</span>
+                  <span>Problem Solving</span>
+                </div>
+              </div>
+              <div class="skills-box">
+                <h3>Programming Languages</h3>
+                <div class="skills-list">
+                  <span>Python</span>
+                  <span>JavaScript/TypeScript</span>
+                  <span>C/C++</span>
+                  <span>SQL</span>
+                  <span>HTML5/CSS</span>
+                </div>
+              </div>
+              <div class="skills-box">
+                <h3>Technologies & Frameworks</h3>
+                <div class="skills-list">
+                  <span>React.js</span>
+                  <span>Node.js</span>
+                  <span>Express.js</span>
+                  <span>MongoDB</span>
+                  <span>TensorFlow</span>
+                  <span>Spring Boot</span>
+                </div>
+              </div>
+              <div class="skills-box">
+                <h3>Tools & Platforms</h3>
+                <div class="skills-list">
+                  <span>Git/GitHub</span>
+                  <span>Docker</span>
+                  <span>Azure</span>
+                  <span>VS Code</span>
+                  <span>Unix Shell</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      
        <!-- -------------- PROJECT BOX ---------------- -->
 
        <section class="section" id="projects">
         <div class="top-header">
-            <h1>Projects</h1>
-        </div>
-        <div class="project-container">
-            <div class="project-box">
-                <img src="assets/images/project2.png" alt="Project 1">
-                <div class="project-details">
-                    <h3>The Snap-Gram</h3>
-                    <div class="links">
-                        <a href="github_project1_link">GitHub</a>
-                        <a href="https://snap-gram-new.vercel.app/">Live Demo</a>
-                    </div>
-                </div>
-            </div>
-            <div class="project-box">
-                <img src="assets/images/streamit.png" alt="Project 2">
-                <div class="project-details">
-                    <h3 id="pb">Stream IT.com</h3>
-                    <div class="links">
-                        <a href="github_project2_link">GitHub</a>
-                        <a href="https://streamitbyrahul.netlify.app/">Live Demo</a>
-                    </div>
-                </div>
-            </div>
-            <div class="project-box">
-                <img src="assets/images/clone.png" alt="Project 3">
-                <div class="project-details">
-                    <h3>Gemini-Clone</h3>
-                    <div class="links">
-                        <a href="github_project3_link">GitHub</a>
-                        <a href="https://gemini-by-rahul.netlify.app/">Live Demo</a>
-                    </div>
+            <div class="header-container">
+                <h1>Projects</h1>
+                <div class="InputContainer">
+                    <input placeholder="Search.." id="input" class="input" name="text" type="text">
                 </div>
             </div>
         </div>
+    
+        <div class="cards-container">
+            <div class="card">
+                <div class="first-content">
+                    <span>SnapGram</span>
+                    <div class="tech-stack">
+                        <img src="assets/images/javascript-svgrepo-com.svg" alt="JavaScript">
+                        <img src="assets/images/html-5-svgrepo-com.svg" alt="HTML">
+                        <img src="assets/images/css-3-svgrepo-com.svg" alt="CSS">
+                        <img src="assets/images/react-svgrepo-com.svg" alt="ReactJS">
+                    </div>
+                </div>
+                <div class="second-content">
+                    <button class="btn live-demo"><a href="https://snap-gram-new.vercel.app/" target="_blank">Live Demo</a></button>
+                    <button class="btn github-link"><a href="https://github.com" target="_blank">GitHub</a></button>
+                </div>
+            </div>
+            <div class="card">
+                <div class="first-content">
+                    <span>StreamIT</span>
+                    <div class="tech-stack">
+                        <img src="assets/images/javascript-svgrepo-com.svg" alt="JavaScript">
+                        <img src="assets/images/html-5-svgrepo-com.svg" alt="HTML">
+                        <img src="assets/images/css-3-svgrepo-com.svg" alt="CSS">
+                        <img src="assets/images/react-svgrepo-com.svg" alt="ReactJS">
+                    </div>
+                </div>
+                <div class="second-content">
+                    <button class="btn live-demo"><a href="https://snap-gram-new.vercel.app/" target="_blank">Live Demo</a></button>
+                    <button class="btn github-link"><a href="https://github.com" target="_blank">GitHub</a></button>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="first-content">
+                    <span>Fitness Tracker</span>
+                    <div class="tech-stack">
+                        <img src="assets/images/javascript-svgrepo-com.svg" alt="JavaScript">
+                        <img src="assets/images/html-5-svgrepo-com.svg" alt="HTML">
+                        <img src="assets/images/css-3-svgrepo-com.svg" alt="CSS">
+                    </div>
+                </div>
+                <div class="second-content">
+                    <button class="btn live-demo"><a href="https://snap-gram-new.vercel.app/" target="_blank">Live Demo</a></button>
+                    <button class="btn github-link"><a href="https://github.com" target="_blank">GitHub</a></button>
+                </div>
+            </div>
+            <!-- Add more cards as needed -->
+            <div class="card">
+                <div class="first-content">
+                    <span>Fitness Tracker</span>
+                    <div class="tech-stack">
+                        <img src="assets/images/javascript-svgrepo-com.svg" alt="JavaScript">
+                        <img src="assets/images/html-5-svgrepo-com.svg" alt="HTML">
+                        <img src="assets/images/css-3-svgrepo-com.svg" alt="CSS">
+                    </div>
+                </div>
+                <div class="second-content">
+                    <button class="btn live-demo"><a href="https://snap-gram-new.vercel.app/" target="_blank">Live Demo</a></button>
+                    <button class="btn github-link"><a href="https://github.com" target="_blank">GitHub</a></button>
+                </div>
+            </div>
+
+            <!---->
+        </div>
+    
+        <script>
+            document.getElementById('input').addEventListener('input', function() {
+                let filter = this.value.toUpperCase();
+                let cards = document.getElementsByClassName('card');
+    
+                for (let i = 0; i < cards.length; i++) {
+                    let projectName = cards[i].getElementsByClassName('first-content')[0].getElementsByTagName('span')[0];
+                    if (projectName.innerText.toUpperCase().indexOf(filter) > -1) {
+                        cards[i].style.display = "";
+                    } else {
+                        cards[i].style.display = "none";
+                    }
+                }
+            });
+        </script>
+    </section>
+    
+    
+            
+            
+        
+        
     </section>
 
         <!--------Certification---------------------------->
@@ -353,6 +395,11 @@
             );
         }
     </script>
+
+    
+    
+  
+  </div>
     
 
     </main>
@@ -401,10 +448,13 @@
             // Hide the splash screen after 3 seconds
             setTimeout(function () {
                 document.getElementById("splash").style.display = "none";
-            }, 3000);
+            }, 4000);
         });
     </script>
 
+
+
+    <link rel="stylesheet" href="index1.html">
     
 </body>
 </html>
