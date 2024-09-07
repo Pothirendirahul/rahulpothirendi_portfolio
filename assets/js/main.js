@@ -90,6 +90,41 @@ srRight.reveal('.form-control',{delay: 100})
 
 
 
+
+const carousel = document.querySelector('.carousel');
+const cards = Array.from(carousel.children);
+const prevButton = document.querySelector('.carousel-button.prev');
+const nextButton = document.querySelector('.carousel-button.next');
+
+let currentIndex = 0;
+
+function updateCards() {
+    cards.forEach((card, index) => {
+        card.classList.remove('active', 'previous', 'next');
+        if (index === currentIndex) {
+            card.classList.add('active');
+        } else if (index === (currentIndex - 1 + cards.length) % cards.length) {
+            card.classList.add('previous');
+        } else if (index === (currentIndex + 1) % cards.length) {
+            card.classList.add('next');
+        }
+    });
+}
+
+prevButton.addEventListener('click', () => {
+    currentIndex = (currentIndex - 1 + cards.length) % cards.length;
+    updateCards();
+});
+
+nextButton.addEventListener('click', () => {
+    currentIndex = (currentIndex + 1) % cards.length;
+    updateCards();
+});
+
+updateCards(); // Initialize the first view
+
+
+
 /* ----- CHANGE ACTIVE LINK ----- */
 
 const sections = document.querySelectorAll('section[id]')
@@ -113,5 +148,6 @@ sections.forEach(current =>{
   }
 })
 }
+
 
 window.addEventListener('scroll', scrollActive)
